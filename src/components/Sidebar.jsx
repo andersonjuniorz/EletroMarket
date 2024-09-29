@@ -9,16 +9,16 @@ function Sidebar() {
       </div>
       <ul className="list-group list-group-flush">
         <li className="list-group-item bg-dark text-white">
-          <a href="#" className="text-white">Home</a>
+          <a href="/" className="text-white">Home</a>
         </li>
         <li className="list-group-item bg-dark text-white">
-          <a href="#" className="text-white">Produtos</a>
+          <a href="/Sobre" className="text-white">Sobre</a>
         </li>
         <li className="list-group-item bg-dark text-white">
-          <a href="#" className="text-white">Sobre</a>
+          <a href="/Produtos" className="text-white">Produtos</a>
         </li>
         <li className="list-group-item bg-dark text-white">
-          <a href="#" className="text-white">Contato</a>
+          <a href="/Contato" className="text-white">Contato</a>
         </li>
       </ul>
     </div>
