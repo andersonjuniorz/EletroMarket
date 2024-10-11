@@ -1,0 +1,6 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem a linha */
+    justify-content: center; /* Alinha os cards ao centro */
+    padding: 20px; /* Adiciona um espaço interno ao contêiner */
+}

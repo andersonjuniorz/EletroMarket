@@ -1,0 +1,52 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha ao topo */
+    height: 100vh; /* Ocupa 100% da altura da tela */
+    margin-left: 250px; /* Compensa a largura da sidebar */
+    background-color: #f8f8f8; /* Fundo claro */
+    padding-top: 20px; /* Espaçamento superior */
+}
+
+.about-content {
+    text-align: left; /* Alinhamento à esquerda */
+    padding: 20px;
+
+    /* Remover o estilo de card */
+    border-radius: 0; /* Remova a borda arredondada */
+    box-shadow: none; /* Remova a sombra */
+    background-color: transparent; /* Remova o fundo claro do conteúdo */
+    max-width: 600px;
+    width: 100%;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+}
+
+.about-section {
+    margin-bottom: 20px; /* Espaçamento entre seções */
+}
+
+.about-section h2 {
+    font-size: 1.8rem;
+    color: var(--color-secondary);
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    text-align: justify;
+}
+
+.about-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 70px;
+}
+
+.about-buttons button{
+    padding: 20px 90px;
+}

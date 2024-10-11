@@ -1,0 +1,20 @@
+.Cart-container{
+    margin-top: 0;
+    margin-left: 250px; /* Compensa a largura da sidebar */
+    padding: 10px;
+    top: 0;
+}
+
+.Cart-container h1{
+    text-align: center;
+}
+
+.cart-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem a linha */
+    justify-content: center; /* Alinha os cards ao centro */
+    padding: 20px; /* Adiciona um espaço interno ao contêiner */
+}
+.Empty-Cart{
+    text-align: center;
+}

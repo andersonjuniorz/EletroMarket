@@ -1,0 +1,11 @@
+/* ---------- PAGE PRODUCTS ----------- */
+
+.products-container{
+    margin-top: 0;
+    margin-left: 250px; /* Compensa a largura da sidebar */
+    padding: 10px;
+    top: 0;
+}
+.products-container h1{
+    text-align: center;
+}

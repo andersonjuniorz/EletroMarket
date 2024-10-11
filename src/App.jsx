@@ -1,63 +1,41 @@
-import { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import productData from './components/productData';
-// Components
-import Sidebar from './components/Sidebar';
-// Pages
-import Home from './pages/Home';
-import Sobre from './pages/Sobre';
-import Produtos from './pages/Produtos';
-import Contatos from './pages/Contatos';
-import CarrinhoCompras from './pages/CarrinhoCompras';
+import './App.css'
+import AppRoutes from './Router';
+import React, { useState } from 'react';
 
-export default function App() {
-  const [cartItems, setCartItems] = useState([]);
+function App() {
+  const [cart, setCart] = useState([]); // Estado do carrinho
 
-  // Funcao para adicionar itens ao carrinho
-  const addToCart = (id) => {
-    const product = productData.find(item => item.id === id);
-    setCartItems(prevItems => [...prevItems, product]);
+  const addToCart = (product) => {
+    setCart((prevCart) => {
+      const existingProduct = prevCart.find(item => item.id === product.id);
+      if (existingProduct) {
+        return prevCart.map(item =>
+          item.id === product.id
+            ? { ...item, qtd: item.qtd + 1 }
+            : item
+        );
+      }
+      return [...prevCart, { ...product, qtd: 1 }];
+    });
   };
-  
 
-  // Funcao para remover itens do carrinho
   const removeFromCart = (id) => {
-    setCartItems(prevItems => prevItems.filter(item => item.id !== id));
+    setCart((prevCart) =>
+      prevCart.reduce((acc, item) => {
+        if (item.id === id) {
+          if (item.qtd > 1) {
+            return [...acc, { ...item, qtd: item.qtd - 1 }];
+          }
+          return acc; // Remove o item se a quantidade for 1
+        }
+        return [...acc, item];
+      }, [])
+    );
   };
 
   return (
-    <div className="d-flex">
-      <Sidebar />
-      <div className="flex-grow-1">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/produtos" element={
-            <main>
-              <h1>Nossos Produtos</h1>
-              <div className="productList">
-                {productData.map((product) => (
-                  <Produtos
-                    key={product.id}
-                    id={product.id}
-                    image={product.image}
-                    name={product.name}
-                    price={product.price}
-                    addToCart={addToCart}
-                  />
-                ))}
-              </div>
-            </main>
-          } />
-          <Route path="/sobre" element={<Sobre />} />
-          <Route path="/carrinhoCompras" element={
-            <CarrinhoCompras 
-              cartItems={cartItems} 
-              removeFromCart={removeFromCart} 
-            />} 
-          />
-          <Route path="/contato" element={<Contatos />} />
-        </Routes>
-      </div>
-    </div>
+    <AppRoutes cart={cart} onAddToCart={addToCart} onRemoveFromCart={removeFromCart} />
   );
 }
+
+export default App;

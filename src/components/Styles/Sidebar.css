@@ -1,0 +1,71 @@
+/* ---------- Sidebar ----------- */
+
+.sidebar-container {
+    width: 250px;
+    height: 100vh; /* Sidebar ocupa 100% da altura da tela */
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Fixa à esquerda */
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Espaçamento entre logo e lista de navegação */
+}
+
+.sidebar-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.sidebar-title {
+    color: #ecf0f1;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.nav-item {
+    margin-bottom: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #bdc3c7;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--color-primary);
+    color: #ecf0f1;
+}
+
+.nav-link.active {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.nav-link-icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
