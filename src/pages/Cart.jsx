@@ -1,6 +1,6 @@
 import React from 'react';
-import RemoveCard from '../Components/RemoveCard'; // Ajuste o caminho se necessário
-import '../Styles/Cart.css';
+import RemoveCard from '../components/RemoveCard'; // Ajuste o caminho se necessário
+import '../styles/Cart.css';
 
 const Cart = ({ cart, onRemove }) => {
     return (

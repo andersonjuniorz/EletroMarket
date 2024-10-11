@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import sidebarData from "../Data/SidebarData";
+import sidebarData from "../data/SidebarData";
 import logo from '../assets/Tech.jpg';
-import '../Components/Styles/Sidebar.css';
+import '../components/styles/Sidebar.css';
 
 const Sidebar = () => {
     return (

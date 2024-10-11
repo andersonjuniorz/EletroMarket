@@ -1,12 +1,16 @@
 // AppRoutes.jsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Products from "./Pages/Products";
-import Cart from "./Pages/Cart";
-import Contact from "./Pages/Contact";
-import Sidebar from "./Components/Sidebar";
-import Footer from "./Components/Footer";
+
+//Pages
+import Home from './pages/Home';
+import About from "./pages/About";
+import Products from "./pages/Products";
+import Cart from "./pages/Cart";
+import Contact from "./pages/Contact";
+
+//Components
+import Sidebar from "./components/Sidebar";
+import Footer from "./components/Footer";
 
 const AppRoutes = ({ cart, onAddToCart, onRemoveFromCart }) => {
   return (

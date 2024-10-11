@@ -1,7 +1,7 @@
 import React from 'react';
-import ProductData from '../Data/ProductData';
-import ProductCard from '../Components/AddCard'; // Ajuste se necessário
-import '../Components/Styles/ProductList.css';
+import ProductData from '../data/ProductData';
+import ProductCard from '../components/AddCard'; // Ajuste se necessário
+import '../components/styles/ProductList.css';
 
 const ProductList = ({ onAddToCart }) => {
   return (

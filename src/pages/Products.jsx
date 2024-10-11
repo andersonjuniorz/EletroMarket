@@ -1,6 +1,6 @@
 import React from 'react';
-import ProductList from '../Components/ProductList'; // Ajuste o caminho se necessário
-import '../Styles/Products.css';
+import ProductList from '../components/ProductList'; // Ajuste o caminho se necessário
+import '../styles/Products.css';
 
 const Products = ({ onAddToCart }) => {
     // A função de adição ao carrinho já é passada como prop, então você não precisa recriá-la

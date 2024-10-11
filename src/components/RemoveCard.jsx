@@ -1,6 +1,6 @@
 // RemoveCard.jsx
 import React from 'react';
-import '../Components/Styles/Card.css';
+import '../components/styles/Card.css';
 
 const RemoveCard = ({ title, image, price, qtd, onRemove }) => {
     return (

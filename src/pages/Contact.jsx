@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faComment } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'; // Adicionando os ícones de redes sociais
-import '../Styles/contact.css';
+import '../styles/Contact.css';
 
 const Contact = () => {
     const [formData, setFormData] = useState({

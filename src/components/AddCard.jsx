@@ -1,6 +1,6 @@
 // AddCard.jsx (ou o nome que você estiver usando para o componente de cartão de produto)
 import React from 'react';
-import '../Components/Styles/Card.css';
+import '../components/styles/Card.css';
 
 const ProductCard = ({ title, image, price, description, onAddToCart }) => {
   return (
