@@ -1,4 +1,3 @@
-// RemoveCard.jsx
 import React from 'react';
 import '../components/styles/Card.css';
 

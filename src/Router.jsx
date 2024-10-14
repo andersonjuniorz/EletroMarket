@@ -1,5 +1,5 @@
-// AppRoutes.jsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useCart } from './CartProvider';
 
 //Pages
 import Home from './pages/Home';
@@ -12,7 +12,9 @@ import Contact from "./pages/Contact";
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
 
-const AppRoutes = ({ cart, onAddToCart, onRemoveFromCart }) => {
+const AppRoutes = () => {
+  const { cart, addToCart, removeFromCart } = useCart();
+
   return (
     <Router>
       <Sidebar /> {/* Sidebar */}
@@ -20,8 +22,8 @@ const AppRoutes = ({ cart, onAddToCart, onRemoveFromCart }) => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/products" element={<Products onAddToCart={onAddToCart} />} />
-        <Route path="/cart" element={<Cart cart={cart} onRemove={onRemoveFromCart} />} />
+        <Route path="/products" element={<Products onAddToCart={addToCart} />} />
+        <Route path="/cart" element={<Cart cart={cart} onRemove={removeFromCart} />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
 

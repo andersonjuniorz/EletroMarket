@@ -12,7 +12,6 @@ const Sidebar = () => {
                 <span className="sidebar-title">EletroMarket</span>
             </div>
 
-            {/* Links de navegação */}
             <ul className='nav-list'>
                 {sidebarData.map((item, index) => {
                     return (

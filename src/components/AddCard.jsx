@@ -1,4 +1,3 @@
-// AddCard.jsx (ou o nome que você estiver usando para o componente de cartão de produto)
 import React from 'react';
 import '../components/styles/Card.css';
 

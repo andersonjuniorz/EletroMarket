@@ -4,7 +4,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     margin: 10px;
-    max-width: 250px; /* Mantenha ou ajuste conforme necessário */
+    max-width: 250px;
     background-color: #fff;
     transition: transform 0.3s;
     display: flex;

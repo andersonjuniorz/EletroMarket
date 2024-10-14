@@ -1,5 +1,5 @@
 import React from 'react';
-import RemoveCard from '../components/RemoveCard'; // Ajuste o caminho se necessário
+import RemoveCard from '../components/RemoveCard';
 import '../styles/Cart.css';
 
 const Cart = ({ cart, onRemove }) => {
@@ -7,7 +7,7 @@ const Cart = ({ cart, onRemove }) => {
         <div className="Cart-container">            
             <h1>Página do Carrinho</h1>
             {cart.length > 0 ? (
-                <div className="cart-list"> {/* Adicione este contêiner */}
+                <div className="cart-list">
                     {cart.map((product) => (
                         <RemoveCard
                             key={product.id}
@@ -15,7 +15,7 @@ const Cart = ({ cart, onRemove }) => {
                             image={product.image}
                             price={product.price}
                             qtd={product.qtd}
-                            onRemove={() => onRemove(product.id)} // Chamando a função para remover
+                            onRemove={() => onRemove(product.id)}
                         />
                     ))}
                 </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductData from '../data/ProductData';
-import ProductCard from '../components/AddCard'; // Ajuste se necessário
+import ProductCard from '../components/AddCard';
 import '../components/styles/ProductList.css';
 
 const ProductList = ({ onAddToCart }) => {
@@ -12,8 +12,7 @@ const ProductList = ({ onAddToCart }) => {
           title={product.name}
           image={product.image}
           price={product.price}
-          description={`Descrição do ${product.name}`}
-          onAddToCart={() => onAddToCart(product)} // Adicionando a função de adicionar ao carrinho
+          onAddToCart={() => onAddToCart(product)}
         />
       ))}
     </div>
