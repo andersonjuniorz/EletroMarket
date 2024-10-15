@@ -4,6 +4,9 @@
 Anderson da Silva Nogueira Júnior   
 www.linkedin.com/in/andersonjuniorz
 
+## Site em produção
+https://eletromarket.netlify.app
+
 ## Descrição
 O **EletroMarket** é uma aplicação moderna de e-commerce, projetada para oferecer uma experiência de compra simples e intuitiva. Esta aplicação simula o funcionamento de um carrinho de compras online, permitindo que os usuários explorem diferentes produtos, adicionem e removam itens do carrinho e naveguem facilmente por diferentes seções da loja. Com foco em funcionalidades essenciais de um e-commerce.
 
