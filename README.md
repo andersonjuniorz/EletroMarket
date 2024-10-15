@@ -44,9 +44,9 @@ Siga os passos abaixo para rodar a aplicação localmente:
 Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/eletromarket.git
+git clone https://github.com/andersonjuniorz/EletroMarket.git
 ```
-   
+
 Acesse o diretório do projeto:
 
 ```bash
