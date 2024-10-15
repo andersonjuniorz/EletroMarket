@@ -1,8 +1,11 @@
 # EletroMarket 🛒
 
-## Autor  do Projeto 
-Anderson da Silva Nogueira Júnior   
-www.linkedin.com/in/andersonjuniorz
+## Autor do Projeto 
+__Disciplina:__ Desenvolvimento de Aplicações Móveis   
+__Turma:__ 961   
+__Aluno:__ Anderson da Silva Nogueira Júnior  
+__Matrícula:__ 2021101171   
+__Professor:__ Sérgio Assunção Monteiro   
 
 ## Site em produção
 https://eletromarket.netlify.app
